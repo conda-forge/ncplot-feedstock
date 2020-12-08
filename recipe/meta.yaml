@@ -39,7 +39,7 @@ about:
   home: https://github.com/pmlmodelling/ncplot 
   license: GPL-3.0-only
   license_file: LICENSE
-  summary: "Powerful Python tools for processing, analyzing and visualizing NetCDF data" 
+  summary: "Easy interactive viewing of NetCDF files in Python" 
 
 
 extra:
