@@ -29,9 +29,9 @@ requirements:
     - metpy
     - geoviews
     - cartopy
-    - holoviews <= 0.13.5
-    - bokeh <= 2.2.3
-    - xarray <= 0.16.2
+    - holoviews<=0.13.5
+    - bokeh<=2.2.3
+    - xarray<=0.16.2
 
 
 test:
