@@ -9,7 +9,7 @@ source:
   sha256: 73e57a9c393fd8e67f8c9e8de85c869b29cb97a820f09879c6d885137b818c9f
 
 build:
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv 
 
 
@@ -23,13 +23,16 @@ requirements:
 
   run:
     - python 
-    - xarray >=0.14.0
     - panel
     - netCDF4
     - hvplot
     - metpy
     - geoviews
     - cartopy
+    - holoviews <= 0.13.5
+    - bokeh <= 2.2.3
+    - xarray <= 0.16.2
+
 
 test:
   imports:
