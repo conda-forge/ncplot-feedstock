@@ -1,16 +1,16 @@
-{% set version = "0.0.8" %}
+{% set version = "0.0.9" %}
 
 package:
   name: ncplot
-  version: {{ version }} 
+  version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/n/ncplot/ncplot-{{ version }}.tar.gz 
-  sha256: 32a5ab76b65e9a2904cfdedbd9401e37c3d730b01cad6d5336630b7f99de7618
+  url: https://pypi.io/packages/source/n/ncplot/ncplot-{{ version }}.tar.gz
+  sha256: 83943068ceae0197a17c12640fee441969d783943071db317f40e00ef6e2e9c6
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv 
+  script: {{ PYTHON }} -m pip install . -vv
 
 
 requirements:
@@ -22,7 +22,7 @@ requirements:
     - setuptools-git
 
   run:
-    - python 
+    - python
     - panel
     - netCDF4
     - hvplot
@@ -39,10 +39,10 @@ test:
     - ncplot
 
 about:
-  home: https://github.com/pmlmodelling/ncplot 
+  home: https://github.com/pmlmodelling/ncplot
   license: GPL-3.0-only
   license_file: LICENSE
-  summary: "Easy interactive viewing of NetCDF files in Python" 
+  summary: Easy interactive viewing of NetCDF files in Python
 
 
 extra:
