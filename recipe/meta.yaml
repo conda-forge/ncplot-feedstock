@@ -9,7 +9,7 @@ source:
   sha256: 83943068ceae0197a17c12640fee441969d783943071db317f40e00ef6e2e9c6
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 
@@ -29,9 +29,9 @@ requirements:
     - metpy
     - geoviews
     - cartopy
-    - holoviews <=1.13.5
-    - bokeh <=2.2.3
-    - xarray <=0.16.2
+    - holoviews 
+    - bokeh 
+    - xarray 
 
 
 test:
