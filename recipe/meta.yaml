@@ -1,4 +1,4 @@
-{% set version = "0.0.9" %}
+{% set version = "0.1.0" %}
 
 package:
   name: ncplot
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/ncplot/ncplot-{{ version }}.tar.gz
-  sha256: 83943068ceae0197a17c12640fee441969d783943071db317f40e00ef6e2e9c6
+  sha256: cf30f19ab3867b9a5ccf9f6a173e4dc385571586f27aec089c2d3ca44aedc9cd
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 
@@ -29,9 +29,9 @@ requirements:
     - metpy
     - geoviews
     - cartopy
-    - holoviews 
-    - bokeh 
-    - xarray 
+    - holoviews
+    - bokeh
+    - xarray
 
 
 test:
