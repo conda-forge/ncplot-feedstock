@@ -1,4 +1,4 @@
-{% set version = "0.2.4" %}
+{% set version = "0.2.5" %}
 
 package:
   name: ncplot
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/ncplot/ncplot-{{ version }}.tar.gz
-  sha256: e2df1c63d12683b792cd44a7f0b98dee5a0d358fc2ed1c027daedbbdc1742fde
+  sha256: 598cfc0bf52e8d866306427b62caa3961cb66ed0110ef5e5b8aa1f51a329d303
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 
