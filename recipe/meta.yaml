@@ -9,7 +9,9 @@ source:
   sha256: 0fb1bbbcf8865339169ca0c0d05c8a32d7ebfe97695cae85017fd754964877cf
 
 build:
+
   number: 0
+
   script: {{ PYTHON }} -m pip install . -vv
 
 
@@ -47,4 +49,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - r4ecology
+    - robertjwilson
