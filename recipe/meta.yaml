@@ -28,6 +28,7 @@ requirements:
     - hvplot
     - metpy
     - holoviews
+    - geoviews-core
     - bokeh
     - xarray
     - jinja2  <=3.0.3
