@@ -10,7 +10,7 @@ source:
 
 build:
 
-  number: 1
+  number: 2
 
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -30,7 +30,6 @@ requirements:
     - hvplot
     - metpy
     - holoviews
-    - geoviews-core
     - bokeh
     - xarray
     - jinja2  <=3.0.3
