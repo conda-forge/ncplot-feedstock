@@ -10,7 +10,7 @@ source:
 
 build:
 
-  number: 0
+  number: 1
 
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -32,7 +32,6 @@ requirements:
     - holoviews
     - bokeh
     - xarray
-    - jinja2  <=3.0.3
 
 
 test:
