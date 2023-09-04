@@ -10,7 +10,7 @@ source:
 
 build:
 
-  number: 2
+  number: 3
 
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -32,7 +32,7 @@ requirements:
     - holoviews
     - bokeh
     - xarray
-    - geoviews
+    - geoviews >=1.10.0
     - jupyter_bokeh >=3.0.7
 
 
