@@ -33,7 +33,7 @@ requirements:
     - bokeh
     - xarray
     - geoviews
-    - jupyter_bokeh
+    - jupyter_bokeh >=3.0.7
 
 
 test:
