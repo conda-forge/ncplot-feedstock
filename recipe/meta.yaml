@@ -9,16 +9,15 @@ source:
   sha256: c3403eae70be7e64e29ab17ef934b8316f60a96eeae4a84391c94d79183e4230
 
 build:
-
-  number: 0
-
+  noarch: python
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 
 requirements:
 
   host:
-    - python
+    - python >= 3.8
     - pip
     - numpy
     - setuptools-git
