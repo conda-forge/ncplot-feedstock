@@ -9,7 +9,7 @@ source:
   sha256: d1c750ee3c13aa1525149fb1f5c3256b36ec06ec66c2027c380d542a98de9138
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -31,8 +31,7 @@ requirements:
     - holoviews
     - bokeh
     - xarray
-    - geoviews >=1.10.0 # [py<312]
-    - geoviews-core >=1.10.0 # [py>311]
+    - geoviews >=1.10.0
     - jupyter_bokeh >=3.0.7
 
 
