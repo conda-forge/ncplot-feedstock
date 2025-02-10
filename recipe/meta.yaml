@@ -5,11 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/n/ncplot/ncplot-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/n/ncplot/ncplot-{{ version }}.tar.gz
   sha256: 74fbc17aa3a238451c1689797cf0e859f27ef994000a43ddb5240f1a5ef78634
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
 
