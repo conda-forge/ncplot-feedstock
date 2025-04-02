@@ -9,7 +9,7 @@ source:
   sha256: 74fbc17aa3a238451c1689797cf0e859f27ef994000a43ddb5240f1a5ef78634
 
 build:
-  number: 3
+  number: 4
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -17,7 +17,7 @@ build:
 requirements:
 
   host:
-    - python >=3.8
+    - python >=3.10
     - pip
     - numpy
     - setuptools
