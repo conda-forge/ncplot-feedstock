@@ -1,4 +1,5 @@
 {% set version = "0.4.1" %}
+{% set python_min = "3.10" %}
 
 package:
   name: ncplot
@@ -9,24 +10,20 @@ source:
   sha256: 4b31b8e6234448e4fce94d5d6ac07f28ebd0dd4c9f1244fc093e9175a0294dba
 
 build:
-  number: 0
-  skip: true  # [win]
-  script: {{ PYTHON }} -m pip install . -vv
-
+  number: 1
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
-
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
-    - numpy
     - setuptools
     - setuptools-git
-
   run:
-    - python
+    - python >={{ python_min }}
     - panel
-    - netCDF4
+    - netcdf4
     - hvplot
     - metpy
     - holoviews
@@ -35,17 +32,20 @@ requirements:
     - geoviews >=1.10.0
     - jupyter_bokeh >=3.0.7
 
-
 test:
+  requires:
+    - python {{ python_min }}
+    - pip
   imports:
     - ncplot
+  commands:
+    - pip check
 
 about:
   home: https://github.com/pmlmodelling/ncplot
   license: GPL-3.0-only
   license_file: LICENSE
   summary: Easy interactive viewing of NetCDF files in Python
-
 
 extra:
   recipe-maintainers:
