@@ -1,12 +1,12 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: ncplot
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/n/ncplot/ncplot-{{ version }}.tar.gz
-  sha256: e68fb217e1fc7de503472b8bbda98f5acf6d4f000c4c864730f4f6a89fa229ba
+  url: https://files.pythonhosted.org/packages/source/n/ncplot/ncplot-{{ version }}.tar.gz
+  sha256: 4b31b8e6234448e4fce94d5d6ac07f28ebd0dd4c9f1244fc093e9175a0294dba
 
 build:
   number: 0
