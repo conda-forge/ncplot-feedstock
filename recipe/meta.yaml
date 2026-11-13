@@ -1,4 +1,4 @@
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/n/ncplot/ncplot-{{ version }}.tar.gz
-  sha256: 0c132bea300ec5c443d998af8f3d3ffcbe1ca0a617eca9d8d8a87bf1d8c6d286
+  sha256: 528b59bf276e70742edea924746624878afb8ab2ec62b20e43032a422650b8ab
 
 build:
   number: 0
